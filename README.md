@@ -1,33 +1,41 @@
 # AI Master Class - Phase 2 Week 1: API Integration
 
-Building real-world AI tools with Python and public APIs.
+This repo contains my Week 1 progress for Phase 2, focusing on API integration with Python and Frontend.
 
-## 🚀 What I Built
+## 📁 Project Structure
 
-**Day 1: API Fundamentals (`day1_api.py`)**
-- HTTP requests with Python `requests`
-- Error handling and response parsing
+### Day 1: Basic API Request
+- **File:** `day1_api.py`
+- Learned how to make API calls using `requests`
+- Fetched and parsed JSON data
 
-**Day 2: Weather Tool (`day2_weather.py`)**
-- OpenWeatherMap API integration
-- Real-time weather by city name
-- Secure API keys with `.env`
+### Day 2: Weather App
+- **File:** `day2_weather.py`
+- Integrated OpenWeather API
+- Displays current weather by city
+- Handles API keys with `.env`
 
-**Day 3: Travel Intelligence Tool (`day3_travel_info.py`)**
-- Input any city: `Kyotera`, `Kampala`, `Beijing`
-- Output: Weather, Region, Population, Currency, Coordinates
-- Chained 2 APIs: OpenWeather + REST Countries
-- Handled real-world API deprecation (v3.1 -> v5)
+### Day 3: Travel Info
+- **File:** `day3_travel_info.py`
+- Combines multiple data sources for travel information
+- Improved `.gitignore` to exclude `*.json` and `venv/`
 
-## 🛠️ Tech Stack
-Python, requests, python-dotenv, OpenWeatherMap API, REST Countries API, Git/GitHub
+### Day 4: Country Lookup (NEW)
+- **File:** `day4_fetch.html`
+- Built with HTML, CSS, and JavaScript Fetch API
+- Live country search using REST Countries API
+- Responsive UI with instant results
 
-## ⚙️ How to Run
+## 🚀 Tech Stack
+- Python, HTML, CSS, JavaScript
+- APIs: OpenWeather, REST Countries
+- Tools: VS Code, Git, GitHub, python-dotenv
+
+## 🔧 How to Run
+
+**Python files:**
 ```bash
-git clone https://github.com/Mudo98/Phase-2-Week-1.git
-cd Phase-2-Week-1
-# Create .env file with your keys
-# OPENWEATHER_API_KEY=your_key
-# RESTCOUNTRIES_API_KEY=your_key
-pip install requests python-dotenv
+pip install -r requirements.txt
+python day1_api.py
+python day2_weather.py
 python day3_travel_info.py
