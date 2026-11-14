@@ -1,41 +1,23 @@
 # AI Master Class - Phase 2 Week 1: API Integration
 
-This repo contains my Week 1 progress for Phase 2, focusing on API integration with Python and Frontend.
+> Learning how to connect Python code to the real world using public APIs.
 
-## 📁 Project Structure
+This repository contains my daily practice and final project for Phase 2, Week 1. The focus was on `requests`, handling JSON, environment variables, and error handling.
 
-### Day 1: Basic API Request
-- **File:** `day1_api.py`
-- Learned how to make API calls using `requests`
-- Fetched and parsed JSON data
+### 🚀 Final Project: KES Currency Converter
 
-### Day 2: Weather App
-- **File:** `day2_weather.py`
-- Integrated OpenWeather API
-- Displays current weather by city
-- Handles API keys with `.env`
+**File:** `week1_project.py`
 
-### Day 3: Travel Info
-- **File:** `day3_travel_info.py`
-- Combines multiple data sources for travel information
-- Improved `.gitignore` to exclude `*.json` and `venv/`
+A live currency converter that uses **KES (Kenyan Shilling)** as base currency and converts a given amount (e.g., KES 20) into USD, EUR, GBP and other major currencies.
 
-### Day 4: Country Lookup (NEW)
-- **File:** `day4_fetch.html`
-- Built with HTML, CSS, and JavaScript Fetch API
-- Live country search using REST Countries API
-- Responsive UI with instant results
+- **Live API:** `https://open.er-api.com/v6/latest/KES` (Free, no key required)
+- **Features:**
+    - Fetches real-time rates
+    - Clean formatted table output
+    - Shows last updated timestamp
+    - Handles network errors & API errors gracefully
 
-## 🚀 Tech Stack
-- Python, HTML, CSS, JavaScript
-- APIs: OpenWeather, REST Countries
-- Tools: VS Code, Git, GitHub, python-dotenv
-
-## 🔧 How to Run
-
-**Python files:**
+**Run it:**
 ```bash
 pip install -r requirements.txt
-python day1_api.py
-python day2_weather.py
-python day3_travel_info.py
+python week1_project.py
