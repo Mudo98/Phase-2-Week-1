@@ -1,23 +1,30 @@
-# AI Master Class - Phase 2 Week 1: API Integration
+@'
+# KES Live Converter — Phase 2 Week 1
 
-> Learning how to connect Python code to the real world using public APIs.
+Live KES → USD / EUR / GBP converter using exchangerate-api. Built for instant multi-currency quoting from a KES price.
 
-This repository contains my daily practice and final project for Phase 2, Week 1. The focus was on `requests`, handling JSON, environment variables, and error handling.
+### Live Output
 
-### 🚀 Final Project: KES Currency Converter
+### What It Does
+- Fetches live exchange rates with KES as base currency
+- Converts any KES amount to USD, EUR, GBP
+- Shows both converted total and per-KES rate
+- Works with or without API key
 
-**File:** `week1_project.py`
+### Features
+- Dual API Mode: Open endpoint (no key required) + Auth endpoint with higher limits
+- Flexible Input: CLI argument or interactive prompt
+- Input Sanitization: Handles commas, spaces, validates positive numbers
+- Robust Error Handling: Network, API, and invalid input errors
+- Timestamped Rates
 
-A live currency converter that uses **KES (Kenyan Shilling)** as base currency and converts a given amount (e.g., KES 20) into USD, EUR, GBP and other major currencies.
+### Tech Stack
+- Python 3.x
+- requests
 
-- **Live API:** `https://open.er-api.com/v6/latest/KES` (Free, no key required)
-- **Features:**
-    - Fetches real-time rates
-    - Clean formatted table output
-    - Shows last updated timestamp
-    - Handles network errors & API errors gracefully
+### Quick Start
 
-**Run it:**
+1. Clone
 ```bash
-pip install -r requirements.txt
-python week1_project.py
+git clone https://github.com/Mudo98/Phase-2-Week-1.git
+cd Phase-2-Week-1
